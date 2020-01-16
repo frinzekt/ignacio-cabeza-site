@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 
@@ -9,14 +9,9 @@ export const IndexPageTemplate = ({
   description
 }) => (
   <div>
-    <div
-      className="full-width-image margin-top-0"
-    >
-      <div
-      >
-        <h1>
-          {title}
-        </h1>
+    <div className="full-width-image margin-top-0">
+      <div>
+        <h1>{title}</h1>
       </div>
     </div>
   </div>
@@ -24,7 +19,7 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   title: PropTypes.string,
-  description: PropTypes.string,
+  description: PropTypes.string
 }
 
 const IndexPage = ({ data }) => {
@@ -43,7 +38,7 @@ const IndexPage = ({ data }) => {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
+      frontmatter: PropTypes.object
     }),
   }),
 }

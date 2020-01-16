@@ -4,9 +4,8 @@
   "version": "1.0.0",
   "author": "Ignacio Cabeza",
   "dependencies": {
-    "@material-ui/core": "^4.8.3",
     "bulma": "^0.8.0",
-    "gatsby": "^2.13.31",
+    "gatsby": "^2.17.17",
     "gatsby-image": "^2.0.23",
     "gatsby-plugin-netlify": "^2.0.6",
     "gatsby-plugin-netlify-cms": "^4.1.6",
