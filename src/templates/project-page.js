@@ -3,59 +3,62 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-//import ProjectPage from './project-page';
 
-export const ProjectsPageTemplate = ({ title, content, contentComponent }) => {
+export const ProjectPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <section className="section section--gradient">
       <div className="container">
-        
-          
-            <div >
-              <h2 className="title has-text-weight-bold is-bold-light">
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <div className="section">
+              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
+              <a href="{github}">github</a>
+              <a href="{live}">live</a>
               <PageContent className="content" content={content} />
             </div>
           </div>
+        </div>
+      </div>
     </section>
   )
 }
 
-ProjectsPageTemplate.propTypes = {
+ProjectPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
-const ProjectsPage = ({ data }) => {
+const ProjectPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
-    <Layout>
-      <ProjectsPageTemplate
+      <ProjectPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
       />
-    </Layout>
   )
 }
 
-ProjectsPage.propTypes = {
+ProjectPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default ProjectsPage
+export default ProjectPage
 
-export const ProjectsPageQuery = graphql`
-  query ProjectsPage($id: String!) {
+export const ProjectPageQuery = graphql`
+  query ProjectPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         title
+        github
+        live
       }
     }
   }

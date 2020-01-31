@@ -3,7 +3,6 @@ templateKey: 'projects-page'
 path: /projects
 title: Projects
 ---
-(I am not very good at naming projects)
 
 ### Cabin Luggage Weight Calculator
 - Github: https://github.com/ignaciocabeza/cabin-luggage-weight-calculator

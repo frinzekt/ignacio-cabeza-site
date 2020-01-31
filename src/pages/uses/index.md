@@ -3,25 +3,22 @@ templateKey: 'uses-page'
 path: /uses
 title: Uses
 ---
-### hardware
+### Hardware
 - MacBook Pro (13-inch, 2017, 8GB, 256GB)
 
 ### Coding enviroment
-* vscode
-  * Theme: Default Dark+
-  * Font: Victor Mono (https://rubjo.github.io/victor-mono/)
-* iTerm2
-  * with: https://ohmyz.sh/
+* vscode (Default Dark+ and [Victor-Mono](https://rubjo.github.io/victor-mono/))
+* iTerm2 ([ohmyz](https://ohmyz.sh/))
 * chrome Dev Tools
 
 ### Online Apps
-* notion.io
-* google docs
-* github
+* Notion.io
+* Gogle docs
+* Github
 
 ### Other Apps
 * Chrome
 * Caffeine
 * Spotify
 
-Updated: Jan 16, 2020
+Updated: Jan 31, 2020
