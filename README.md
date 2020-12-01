@@ -1,6 +1,6 @@
 # Respository of my personal website 
 
-Live at: [ignaciocabeza.com](ignaciocabeza.com)
+Live at: [ignaciocabeza.com](https://ignaciocabeza.com/)
 
 ## Notes
 
